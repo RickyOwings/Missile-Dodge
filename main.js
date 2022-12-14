@@ -14,9 +14,13 @@ function draw(){
     GameObject.drawAll();
 }
 var lastRender = 0;
+var pageInteracted = false;
+window.addEventListener('keydown',()=>{pageInteracted = true});
 function loop(timestamp){
     let progress = timestamp - lastRender;
+    if(pageInteracted){
     update(progress);
+    }
     draw();
     lastRender = timestamp;
     window.requestAnimationFrame(loop); 
