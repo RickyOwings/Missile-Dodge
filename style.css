@@ -1,0 +1,36 @@
+body{
+    margin:0;
+    overflow: hidden;
+}
+canvas{
+    image-rendering: pixelated;
+    z-index: 1;  
+}
+@font-face {
+    font-family: Monocraft;
+    src: url("./Monocraft.otf");
+}
+#ui{
+    user-select: none;
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    font-family: 'Monocraft';
+    color:#0f0
+}
+#ui p{
+    font-size: 1.2vh;
+    margin-left: 40vw;
+}
+#speedometer{
+    margin-top:40vh;
+}
+#goometer{
+    margin-top:0;
+}
+#healthoometer{
+    margin-top: 0;
+}
