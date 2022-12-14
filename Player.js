@@ -63,7 +63,7 @@ class Player extends GameObject{
         this.type = "player";
         this.soundEngine = new Audio("./Assets/Sounds/engine.wav");
         this.warningSound = new Audio("./Assets/Sounds/active radar.wav");
-        this.missileLockSound = new Audio("./Assets/Sounds/aquireTarget.wav");
+        this.missileLockSound = new Audio("./Assets/Sounds/aquiretarget.wav");
         this.missileLockSound.preservesPitch = false;
         this.lockSoundLoopPoint = 0;
         this.lockSoundLength = 61;
