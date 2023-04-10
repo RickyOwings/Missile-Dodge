@@ -4,7 +4,8 @@ const input = {
     'a':0,
     'd':0,
     '=':0,
-    '-':0
+    '-':0,
+    'q':0
 };
 var clickInput = {
     '1':0
@@ -34,10 +35,14 @@ document.addEventListener('mouseup', (event)=>{
     input["mousedown"]=0;
 })
 document.addEventListener('keydown', (event)=>{
-    input[event.key]=1
+    input[event.key]=1;
+    if (event.key == " ") input["mousedown"] = 1;
+    if (event.key == "ArrowDown") input["q"] = 1;
 });
 document.addEventListener('keyup', (event)=>{
-    input[event.key]=0
+    input[event.key]=0;
+    if (event.key == " ") input["mousedown"] = 0;
+    if (event.key == "ArrowDown") input["q"] = 0;
 });
 document.addEventListener('keypress',(event)=>{
     clickInput[event.key] = 1;

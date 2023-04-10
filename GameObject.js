@@ -124,5 +124,5 @@ GameObject.camera = {
     position: new Vector2(0,0),
     rotation: 0,
     //When zoom is 1, 1 unit is 1px. When zoom is 2, 1 unit is 2px
-    zoom:0.02
+    zoom:0.2
 }

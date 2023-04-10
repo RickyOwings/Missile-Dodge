@@ -35,3 +35,8 @@ canvas{
 #healthoometer{
     margin-top: 0;
 }
+#controls{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
